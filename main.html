@@ -202,7 +202,51 @@
               <li>Database : Mysql</li>
             </ol>
         </ol>
-        <br> 
+        <br>
+        <li><strong>Tahap Pengujian</strong></li> 
+        <table border="1" style="font-size: 14px;" >
+            <tr>
+                <th style="padding: 5px;">Sekenario Pengujian</th>
+                <th>Hasil yang diharapkan</th>
+                <th>keterangan</th>
+                <th>kesimpulan</th>
+            </tr>
+            <tr>
+                <td style="padding: 5px;">Tidak memasukkan inputan saat login</td>
+                <td>Sistem tidak memberi akses dan menampilkan pesan error form harus diisi</td>
+                <td>Sesuai harapan</td>
+                <td>Valid</td>
+            </tr>
+            <tr>
+                <td  style="padding: 5px;">Memasukkan username atau password salah</td>
+                <td>Sistem tidak memberi akses dan menampilkan pesan error inputan tidak tepat</td>
+                <td>Sesuai harapan</td>
+                <td>Valid</td>
+            </tr>
+            <tr>
+                <td  style="padding: 5px;">Memasukkan username dan password sesuai data</td>
+                <td>Sistem memberikan akses kepada admin/anggota sesuai data login</td>
+                <td>Sesuai harapan</td>
+                <td>Valid</td>
+            </tr>
+            <tr>
+                <td  style="padding: 5px;">Mengetik langsung halaman dashboard melalui url tanpa login</td>
+                <td>Sistem menangani proses autentikasi dan langsung diarahkan ke halaman login</td>
+                <td>Sesuai harapan</td>
+                <td>Valid</td>
+            </tr>
+            <tr>
+                <td  style="padding: 5px;">Anggota meminjam buku tanpa memilih buku terlebih dahulu</td>
+                <td>Sistem memberikan pesan error untuk memilih buku terlebih dahulu</td>
+                <td>Sesuai harapan</td>
+                <td>Valid</td>
+            </tr>
+                <td  style="padding: 5px;">Anggota meminjam buku yang sudah tidak tersedia</td>
+                <td>Sistem otomatis mematikan tombol pinjam apabila stok buku tidak tersedia</td>
+                <td>Sesuai harapan</td>
+                <td>Valid</td>
+        </table>
+        <br>
         <li><strong>Tahap Design</strong></li><br>
         <ol>
             <li>Use Case Diagram</li> 
