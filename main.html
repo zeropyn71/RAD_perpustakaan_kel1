@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Laporan Berbasis Web</title>
+</head>
+<body>
+    <h2>Pengembangan Aplikasi Sistem Informasi<br>Manajemen Perpustakaan<br>Berbasis Web<br>Metode Prototype</h2>
+    <br>
+    <hr>
+    <br>
+    <h3>BAB I<br>PENDAHULUAN</h3>
+    <br>
+    <h4>1.1 Latar Belakang</h4>
+    <p>Informasi merupakan sebuah elemen penting dalam kehidupan manusia yang semakin lama semakin maju. 
+        Dengan adanya informasi, kita bisa mengetahui beberapa hal yang sedang terjadi di sekitar kita. 
+        Tanpa informasi, kita menjadi buta akan keadaan sekitar, maka dibuatlah tempat untuk menyimpan 
+        informasi yang disebut dengan perpustakaan.</p>
+    <p>Perpustakaan adalah sebuah tempat dimana didalamnya terdapat banyak ilmu pengetahuan yang sangat bermanfaat bagi masyarakat. 
+        Peranan perpustakaan pada kehidupan bermasyarakat adalah sebagai tempat menyimpan karya-karya masyarakat, 
+        sebagai tempat mengalirnya informasi, sebagai tempat memperoleh ilmu.</p>
+    <p>Seiring dengan perkembangan teknologi, sistem terkomputerisasi menjadi suatu kebutuhan dalam segala unit usaha. 
+        Selain unit usaha terdapat juga unit perpustakaan yang memiliki peran sebagai salah satu tempat untuk mencari informasi. 
+        Unit perpustakaan pada dasarnya membutuhkan pengelolaan terhadap aset-aset yang dimilikinya seperti pendataan aset, 
+        proses transaksi pinjam-meninjam.</p>
+    <p>Oleh karena itu, dibuatlah sebuah aplikasi Sistem Informasi Manajemen Perpustakaan berbasis web supaya memudahkan sekolah x 
+        untuk mengelola pendataan dan transaksi yang terjadi di perpustakaan sekolah tersebut. Sistem ini dikembangkan dengan 
+        menggunakan Bahasa pemrograman PHP dengan aturan sebuah web supaya lebih tersruktur menggunakan HTML, CSS.</p>
+    <h4>1.2 Rumusan Masalah</h4>
+        <p>Berikut permasalahan yang terjadi di perpustakaan sekolah x :</p>
+    <ol>
+        <li>Pendataan yang masih manual diperpustakaan tersebut.</li>
+        <li>Belum adanya aplikasi manajemen perpustakaan yang mendukung pustakawan dalam mengelola data yang ada diperpustakaan.</li>
+        <li>Pembuatan laporan yang lama membuat kinerja pustakawan kurang efektif dan efisien.</li>
+    </ol>
+    <h4>1.3 Batasan Masalah</h4>
+        <p>Berikut batasan masalah adalah :</p>
+    <ol>
+        <li>Hak akses digunakan untuk admin, operator dan anggota</li>
+        <li>Sistem dibangun menggunakan Bahasa Pemrograman PHP. dengan aturan web HTML, CSS. dan database MySQL</li>
+        <li>Data yang diolah meliputi data admin, data operator dan data anggota.</li>
+    </ol>
+    <h4>1.4 Tujuan</h4>
+        <p>Adapun tujuan yang didapat :</p>
+    <ol>
+        <li>Merancang sistem manajemen yang lebih efisien dalam pendataan</li>
+        <li>Merancang aplikasi perpustakaan berbasis web untuk sekolah x</li>
+        <li>Merancang sistem aplikasi manajemen perpustakaan yang ramah pengguna, baik dari segi antarmuka ataupun fitur-fitur yang disediakan untuk memudahkan pustakawan dalam mengelola perpustakaan.</li>
+    </ol>
+    <br>
+    <br>
+    <h3>BAB II<br>PEMBAHASAN</h3>
+    <br>
+    <br>
+    <h4>2.1 Landasan Teori</h4>
+    <ol><br>
+        <li><strong>PHP</strong></li>
+        <p>PHP (PHP: Hypertext Preprocessor) adalah sebuah bahasa pemrograman server side scripting yang bersifat open source.<br>
+            Sebagai sebuah scripting language, PHP menjalankan instruksi pemrograman saat proses runtime. Hasil dari instruksi tentu akan berbeda tergantung data yang diproses.<br>
+            PHP merupakan bahasa pemrograman server-side, maka script dari PHP nantinya akan diproses di server. Jenis server yang sering digunakan bersama dengan PHP<br>antara lain Apache, Nginx, dan LiteSpeed.<br>
+            Selain itu, PHP juga merupakan bahasa pemrograman yang bersifat open source. Pengguna bebas memodifikasi dan mengembangkan sesuai dengan kebutuhan mereka.</p>
+    <br>
+       <li><strong>Use Case Diagram</strong></li>
+        <p>Use case diagram adalah satu dari berbagai jenis diagram UML (Unified Modelling Language) yang menggambarkan hubungan interaksi antara sistem dan aktor. Use Case dapat mendeskripsikan tipe interaksi antara si pengguna sistem dengan sistemnya.
+            </p>
+        <p>Tentunya, use case diagram merupakan sesuatu yang mudah dipelajari. Langkah awal untuk melakukan pemodelan, tentu perlunya suatu diagram yang mampu menjabarkan aksi aktor dengan aksi sistem itu sendiri, seperti yang terdapat pada use case diagram.</p>
+        <p>Adapun, fungsi dari use case diagram sebagai berikut:</p>
+       <ul>
+           <li>Berguna memperlihatkan proses aktivitas secara urut dalam sistem.</li>
+           <li>Mampu menggambarkan proses bisnis, bahkan menampilkan urutan aktivitas pada sebuah proses.</li>
+           <li>Sebagai bridge atau jembatan antara pembuat dengan konsumen untuk mendeskripsikan sebuah sistem.</li>
+
+       </ul>
+        <p>Komponen Use Case Diagram</p>
+        <img src="sources/useCase.png">
+            <p>Gambar 1. Komponen Use Case</p>
+        <br>
+        <li><strong>Activity Diagram</strong></li>
+        <p>Activity Diagram merupakan rancangan aliran aktivitas atau aliran kerja dalam sebuah sistem yang akan dijalankan. Activity Diagram juga digunakan untuk mendefinisikan atau mengelompokan aluran tampilan dari sistem tersebut. Activity Diagram memiliki komponen dengan bentuk tertentu yang dihubungkan dengan tanda panah. Panah tersebut mengarah ke-urutan aktivitas yang terjadi dari awal hingga akhir.</p>
+        <p>Tujuan Activity Diagram: </p>
+        <ul>
+            <li>Menjelaskan urutan aktivitas dalam suatu proses.</li>
+            <li>Di dalam dunia bisnis biasanya digunakan untuk modeling (memperlihatkan urutan proses bisnis).</li>
+            <li>Mudah dalam memahami proses yang ada dalam sistem secara keseluruhan.</li>
+            <li>Merupakan metode perancangan yang terstruktur, mirip dengan Flowchart maupun Data Flow Diagram (DFD).</li>
+            <li>Mengetahui aktivitas aktor/pengguna berdasarkan use case/diagram yang dibuat sebelumnya. </li>
+        </ul>
+        <br>
+        <p>Komponen Activity Diagram</p>
+        <img src="sources/activityDiagram.png" alt="">
+        <p>Gambar 2. Komponen Activity Diagram</p>
+        <br>
+        <li><strong>Prototype</strong></li>
+            <p>Prototype adalah sebuah bentuk dari model awal maupun contoh yang akan dilakukan pembuatan untuk melakukan kegiatan uji coba dari sebuah konsep yang dimana akan dilakukan pengenalan. Prototype sendiri adalah sebuah tahapan kedua yang akan dilakukan sebelum melakukan kegiatan produksi massal. Sehingga tahap pertama adalah pembuatan ide maupun menyusun konsep awal dan setelahnya akan melakukan pembuatan dari prototype. Dengan adanya prototype sendiri maka kita akan melakukan pemilimalisiran kesalahan dalam membuat keputusan.<br>
+        <br>
+        <li><strong>Syarat-Syarat Pembuatan Prototype</strong></li>
+            <p>Prototipe adalah sebuah bentuk dari model awal maupun contoh yang akan dilakukan pembuatan untuk melakukan kegiatan uji coba dari sebuah konsep yang dimana akan dilakukan pengenalan. Prototipe sendiri adalah sebuah tahapan kedua yang akan dilakukan sebelum melakukan kegiatan produksi massal. Sehingga tahap pertama adalah pembuatan ide maupun menyusun konsep awal dan setelahnya akan melakukan pembuatan dari prototipe. Dengan adanya prototipe sendiri maka kita akan melakukan pemilimalisiran kesalahan dalam membuat keputusan.<br>
+                Syarat-syarat yang diperlukan untuk membangun prototype adalah :</p>
+            <ul>
+                <li>Memiliki kesesuaian dengan sebuah bentuk asli yang ada</li>
+                <li>Memiliki sebuah potongan dari detail yang ada</li>
+                <li>Memiliki sifat skalatis</li>
+            </ul>
+    </ol>
+    <br>
+    <h4>2.2 Metode Perancangan</h4>
+    <ol>
+        <li>Metode Prototype</li>
+        <img src="sources/prototyping.png">
+            <p>Gambar 3. Metode Prototype</p>
+        <p>Metode Prototype merupakan salah satu metode siklus hidup sistem yang didasarkan pada 
+            konsep model bekerja (working model). tujuannya adalah mengembangkan model
+            menjadi sistem final. yang artinya sistem akan dikembangkan lebih cepat dari pada
+            metode tradisional dan biayanya lebih rendah. Berikut tahap-tahap metode Prototype  :</p>
+        <ol>
+            <li>Ananlisis Kebutuhan</li>
+            <p>Di tahap ini pengembang melakukan identifikasi software 
+                dan semua kebutuhan sistem yang akan dibuat..</p>
+            <li>Membangun Prototyping</li>
+            <p>Membangun prototyping dengan membuat perancangan sementara yang berfokus pada penyajian 
+                kepada pelanggan (misalnya dengan membuat input dan format output).</p>
+            <li>Evaluasi Prototyping</li>
+            <p>Pada tahap ini, Evaluasi ini dilakukan untuk 
+                mengetahui apakah prototyping sudah sesuai dengan harapan pelanggan..</p>
+            <li>Pengkodean Sistem</li>
+            <p>Pada tahap ini prototyping yang sudah disetujui 
+                akan diubah ke dalam bahasa pemrograman.</p>
+            <li>Menguji Sistem</li>
+            <p>Di tahap ini dilakukan untuk menguji 
+                sistem perangkat lunak yang sudah dibuat Pengujian.</p>
+            <li>Evaluasi Sistem</li>
+            <p>Perangkat lunak yang sudah siap jadi akan dievaluasi oleh pelanggan 
+                untuk mengetahui apakah sistem sesuai dengan yang diharapkan.</p>
+            <li>Menggunakan Sistem</li>
+            <p>Perangkat lunak yang sudah diuji dan disetujui oleh pelanggan siap digunakan.</p>
+        </ol>
+    </ol>
+    <br>
+    <h4>2.3 Hasil dan Pembahasan</h4>
+    <br>
+    <ol>
+        <li><strong>Tahap Analysis Requirement</strong></li><br>
+        <ol>
+            <li>Analisis Kebutuhan Fungsional</li> 
+            <p>Pada tahap ini berfokus terhadap fitur yang akan dikembangkan dalam sistem. Dalam sistem terdapat 3 hak akses pengguna yaitu Admin, Operator dan Anggota. 
+                Berikut adalah fitur yang ada di sistem. </p>
+            <ol>
+            <li>Admin</li>
+            <ol type="a">
+              <li>Admin dapat login dan logout</li>
+              <li>Admin dapat melihat data buku</li>
+              <li>Admin dapat melihat data anggota</li>
+              <li>Admin dapat melihat data transaksi</li>
+              <li>Admin dapat melihat laporan</li>
+              <li>Admin dapat mengelola data operator</li>
+              <li>Admin dapat mengelola data pribadi</li>
+              <li>Admin dapat menambahkan operator</li>
+            </ol>
+            <li>Operator</li>
+            <ol type="a">
+              <li>Operator dapat login dan logout</li>
+              <li>Operator dapat mengelola dan melihat data buku</li>
+              <li>Operator dapat mengelola data anggota</li>
+              <li>Operator dapat mengelola data transaksi</li>
+              <li>Operator dapat mengelola laporan</li>
+              <li>Operator dapat mengelola data pribadi</li>
+              <li>Operator dapat menambahkan anggota</li>
+            </ol>
+            <li>Anggota</li>
+            <ol type="a">
+              <li>Anggota dapat login dan logout</li>
+              <li>Anggota dapat melihat data buku</li>
+              <li>Anggota dapat melihat data transaksi</li>
+              <li>Anggota dapat melihat riwayat transaksi</li>
+              <li>Anggota dapat mengelola data pribadi</li>
+            </ol>
+            </ol><br>
+            <li>Analisis Kebutuhan Non Fungsional</li>
+            <p>Kebutuhan non-fungsional merupakan kebutuhan diluar kebutuhan fungsional yaitu meliputi kebutuhan akan spesifikasi hardware dan kebutuhan software yang sangat mempengaruhi beroprasinya website. 
+                Adapun kebutuhan fungsional meliputi:</P>
+            <ol>
+               <li>Hardware</li>
+            <ol type="a">
+              <li>Processor : 1.5 GHz Dual Core</li>
+              <li>Memory (RAM) : 2 GB</li>
+              <li>Hard disk : 120 GB</li>
+            </ol>
+            <li>Software</li>
+            <ol type="a">
+              <li>Sistem operasi : Minimum Windows 7</li>
+              <li>Bahasa pemrograman : PHP, HTML, CSS</li>
+              <li>Text Editor : Visual Studio Code</li>
+              <li>Database : Mysql</li>
+            </ol>
+        </ol>
+        <br> 
+        <li><strong>Tahap Design</strong></li><br>
+        <ol>
+            <li>Use Case Diagram</li> 
+            <p> Use Case Diagram merupakan daftar aksi atau tahapan yang mendefinisikan interaksi antara aktor dan sistem untuk mencapai suatu tujuan. Berikut adalah <i>Use case diagram</i> sistem informasi
+            Perpustakaan Kelompok 1:</p>
+            <img src="sources/Use Case Diagram.png" style="width: 700px; height: 600px;">
+            <p>Gambar 4. Use Case Diagram</p><br>
+            <p>Pada gambar di atas terdapat tiga aktor yaitu:</p>
+            <ol>
+                <li>Anggota<br>Yaitu siswa/siswi yang telah terdaftar sebagai anggota perpustakaan. Anggota dapat melihat data buku yang tersedia di perpustakaan dan melihat transaksi peminjaman buku.</li>
+                <li>Operator<br>Yaitu bagian yang mempunyai akses penuh untuk mengelola data buku,  peminjaman dan pengembalian buku, dan data anggota.</li>
+                <li>Admin<br>Yaitu bagian yang hanya bisa melihat data buku dan anggota serta mengelola data operator.</li>
+            </ol>
+            
+            <li>Activity Diagram</li>
+                <p>Activity Diagram merupakan rancangan aliran aktivitas atau aliran kerja dalam sebuah sistem yang akan dijalankan. 
+                    Activity Diagram juga digunakan untuk mendefinisikan atau mengelompokan aluran tampilan dari sistem tersebut.
+                    Dalam beberapa hal activity diagram memainkan peran mirip diagram alir, tetapi perbedaan
+                    prinsip antara notasi diagram alir adalah activity diagram mendukung <i>behavior paralel.</i> Activity Diagram yang 
+                    ada pada sistem informasi Perpustakaan Kelompok 1 adalah sebagai berikut:</p><br>
+                <ol type="a">
+                    <li>Admin</li><br>
+                    <img src="sources/Activity Diagram-Admin.png">
+                    <p>Gambar 5. Activity Diagram Admin - mengelola data pelamar</p><br>
+                    <p>Activity diagram yang ditampilkan pada gambar di atas adalah proses pendaftaran seorang operator yang dilakukan oleh admin.</p><br>
+                    <li>Operator</li><br>
+                    <img src="sources/Activity Diagram-Operator.png">
+                    <p>Gambar 6. Activity Diagram Operator</p>
+                    <br><img src="sources/Activity Diagram-Operator (Pengembalian).png">
+                    <p>Gambar 7. Activity Diagram Operator - Pengembalian</p><br>
+                    <li>Anggota</li><br>
+                    <img src="sources/Activity Diagram-Anggota.png">
+                    <p>Gambar 8. Activity Diagram Anggota - Pendaftaran</p> 
+                    <br><img src="sources/Activity Diagram-Anggota (Peminjaman).png">
+                    <p>Gambar 9. Activity Diagram Anggota - Peminjaman</p><br>
+                </ol>
+            <li>Desain User Interface</li>
+            <p>Desain User Interface (UI) adalah proses yang digunakan desainer untuk membuat tampilan dalam perangkat lunak atau perangkat terkomputerisasi, dengan fokus pada tampilan atau gaya.</p>
+                <ol type="a">
+                    <li>UI Halaman Login</li>
+                    <img src="sources/login.png">
+                    <p>Gambar 10. Desain Interface pada halaman Login.</p>
+                    <li>UI Halaman Admin</li>
+                    <img src="sources/admin.png">
+                    <p>Gambar 11. Desain Interface pada halaman Admin.</p>
+                    <li>UI Halaman Operator</li>
+                    <img src="sources/operator.png">
+                    <p>Gambar 12. Desain Interface pada halaman Operator.</p>
+                    <li>UI Halaman Anggota</li>
+                    <img src="sources/anggota.png">
+                    <p>Gambar 13. Desain Interface pada halaman Anggota.</p>
+                </ol>
+        </ol>
+    </ol>
+        
+</body>
+</html>
